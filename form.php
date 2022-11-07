@@ -6,7 +6,7 @@
     <title>Tidsbokning</title>
 </head>
 <body>
-trait
+
 <div>
     <form method="post" action="index2.php">
 
