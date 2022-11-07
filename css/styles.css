@@ -8,6 +8,11 @@
     text-align: center;
 }
 
+.link {
+    font-size: 25px;
+    color: #ff0000;
+}
+
 #date, #time, #massageType, #name, #phoneNmr {
     border-radius: 5px;
 }
