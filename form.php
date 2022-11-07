@@ -10,7 +10,7 @@
 <div>
     <form method="post" action="index2.php">
 
-        <label for="Date">Datum</label><br>
+        <label for="Date" id="dateLabel">Datum</label><br>
         <input type="text" id="date" name="Date"><br><br>
 
         <label for="Time">Tid</label><br>
@@ -28,6 +28,8 @@
 
         <input type="submit" name="submitbtn" id="submitbtn" value="Submit">
     </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><p id="leMongus">ඞ</p>
 </div>
 
 </body>

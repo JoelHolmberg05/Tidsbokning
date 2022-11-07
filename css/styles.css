@@ -1,7 +1,15 @@
+#leMongus {
+    color: #ffffff0a
+}
+
 * {
-    color: white;
+    color: #ffffff;
     background-color: black;
     text-align: center;
+}
+
+#dateLabel {
+    padding-right:
 }
 
 #date, #time, #massageType, #name, #phoneNmr {
@@ -9,7 +17,7 @@
 }
 
 #submitbtn {
-    color: white;
-    background-color: rgba(0, 255, 13, 0.748);
+    color: #ffffff;
+    background-color: #00ff0dbf;
     border-radius: 5px;
 }
