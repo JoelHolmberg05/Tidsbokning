@@ -1,0 +1,15 @@
+* {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#date, #time, #massageType, #name, #phoneNmr {
+    border-radius: 5px;
+}
+
+#submitbtn {
+    color: white;
+    background-color: rgba(0, 255, 13, 0.748);
+    border-radius: 5px;
+}
