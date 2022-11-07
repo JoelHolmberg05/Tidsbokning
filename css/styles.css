@@ -3,8 +3,8 @@
 }
 
 * {
-    color: #ffffff;
-    background-color: black;
+    color:;
+    background-color:;
     text-align: center;
 }
 
@@ -21,4 +21,8 @@
     color: #ffffff;
     background-color: #00ff0dbf;
     border-radius: 5px;
+}
+
+#table {
+    border: black solid 2px:    
 }
