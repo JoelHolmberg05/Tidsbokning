@@ -14,29 +14,29 @@
 <div>
     <form method="post" action="index2.php">
 
-        <label class="inputTitle" for="Name">First Name</label><br>
+        <label class="inputTitle" for="name">First Name</label><br>
         <input type="text" id="name" name="Name"><br><br>
 
-        <label class="inputTitle" for="Name">Last Name</label><br>
-        <input type="text" id="name" name="Name"><br><br>
+        <label class="inputTitle" for="lastName">Last Name</label><br>
+        <input type="text" id="lastName" name="Name"><br><br>
 
-        <label class="inputTitle" for="PhoneNmr">Phonenumber</label><br>
+        <label class="inputTitle" for="phoneNmr">Phonenumber</label><br>
         <input type="text" id="phoneNmr" name="PhoneNmr"><br><br>
 
-        <label class="inputTitle" for="Time">Time</label><br>
+        <label class="inputTitle" for="time">Time</label><br>
         <input type="text" id="time" name="Time"><br><br>
     
-        <label class="inputTitle" for="Date" id="dateLabel">Date</label><br>
+        <label class="inputTitle" for="date" id="dateLabel">Date</label><br>
         <input type="text" id="date" name="Date"><br><br>
 
-        <label class="inputTitle" for="MassageType">Massage type</label><br>
+        <label class="inputTitle" for="massageType">Massage type</label><br>
         <input type="text" id="massageType" name="MassageType"><br><br>
 
 
         <input type="submit" name="submitbtn" id="submitbtn" value="Submit">
     </form>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><p id="leMongus">ඞ</p>
+    <br><br><br><br><br><br><br><br><br><br><br><p id="leMongus">ඞ</p>
 </div>
 
 </body>
