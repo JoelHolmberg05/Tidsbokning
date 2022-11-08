@@ -14,8 +14,11 @@
 
 * {
     color: #ffffff;
-    background-color: #000000;
     text-align: center;
+}
+
+body {
+    background-color: #000000;
 }
 
 header {
@@ -46,6 +49,7 @@ header {
 
 #date, #time, #massageType, #name, #lastName, #phoneNmr {
     border-radius: 5px;
+    background-color: #000000;
 }
 
 #submitbtn {
