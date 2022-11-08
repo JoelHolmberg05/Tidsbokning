@@ -36,7 +36,7 @@
         <input type="submit" name="submitbtn" id="submitbtn" value="Submit">
     </form>
 
-    <br><br><br><br><br><br><br><br><br><br><br><p id="leMongus">ඞ</p>
+    <br><br><br><br><br><br><br><br><p id="leMongus">ඞ</p>
 </div>
 
 </body>

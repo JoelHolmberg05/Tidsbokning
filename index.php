@@ -19,9 +19,12 @@
     <th>Massage type</th>
   </tr>
   <tr>
-    <td> </td>
-    <td> </td>
-    <td> </td>
+    <td>balls name</td>
+    <td>balls name 2</td>
+    <td>balls number</td>
+    <td>balls time</td>
+    <td>balls date</td>
+    <td>balls type</td>
   </tr>
   <tr>
     <td> </td>
