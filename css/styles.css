@@ -10,9 +10,13 @@
 
 .link {
     font-size: 25px;
+<<<<<<< HEAD
     color: #ff0000;
     border: #ffffff solid 3px;
     border-radius: 20px;
+=======
+    color: #ffffff;
+>>>>>>> 8abd657329f47d5c8d8f0da55c6cde14e4b8a981
 }
 
 #date, #time, #massageType, #name, #phoneNmr {
