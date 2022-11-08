@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <a class="link" href="form.php">Form</a><br><br>
+    <br><br><br><br><a class="link" href="form.php">Form</a><br><br><br><br><br>
     <a class="link" href="index.php">Schema</a>
 
 </body>

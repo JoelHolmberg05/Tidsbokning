@@ -10,7 +10,9 @@
     <title>Tidsbokning</title>
 </head>
 <body>
-
+<header>
+<a href="navpage.php">Main Page</a>
+</header>
 <div>
     <form method="post" action="index2.php">
 
@@ -36,15 +38,17 @@
         <input type="submit" name="submitbtn" id="submitbtn" value="Submit">
     </form>
 
-    <br><br><br><br><br><br><br><br><p id="leMongus">ඞ</p>
+    <br><br><br><br><p id="leMongus">ඞ</p>
 </div>
 
+<footer>
+
+</footer>
 </body>
 </html>
 
 
 <?php
     include 'includes/config.php';
-
 
 ?>
