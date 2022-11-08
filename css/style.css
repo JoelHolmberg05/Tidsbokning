@@ -18,7 +18,12 @@
 }
 
 body {
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background: url("../img/massage-things.jpg");
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	background-size: cover;
+
 }
 
 header {
@@ -32,15 +37,16 @@ header {
     border: #ffffff solid 3px;
     border-radius: 5px;
     color: #ffffff;
+    background-color:#b1b1b1;
     text-decoration: none;
 }
 
 .link:hover {
-    background-color: #505050;
+    background-color: #3d3d3d;
     border-radius: 7px;
-    box-shadow: 0px 0px 19px 25px #ffffff1c;
-    -webkit-box-shadow: 0px 0px 19px 25px #ffffff1c;
-    -moz-box-shadow: 0px 0px 19px 25px #ffffff1c;
+    box-shadow: 0px 0px 19px 25px #ffffffb9;
+    -webkit-box-shadow: 0px 0px 19px 25px #ffffffb9;
+    -moz-box-shadow: 0px 0px 19px 25px #ffffffb9;
 }
 
 .inputTitle:hover {
