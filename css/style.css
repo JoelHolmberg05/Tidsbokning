@@ -13,12 +13,11 @@
 }
 
 * {
-    color: #ffffff;
+    color: #000000;
     text-align: center;
 }
 
 body {
-    /*background-color: #000000;*/
     background: url("../img/massage-things.jpg");
 	background-repeat: no-repeat;
 	/*background-position: center;*/
@@ -27,8 +26,13 @@ body {
 }
 
 header {
-    background-color: #6d6d6d;
+    background-color: #ffffff;
     padding: 30px;
+    border-radius:15px;
+}
+
+.headerLink {
+    color:#000000;
 }
 
 .link {
@@ -75,5 +79,7 @@ header {
 }
 
 #table {
-    border: #ffffff solid 2px;
+    border: #000000 solid 4px;
+    border-radius:15px;
+    background-color:#b1b1b1;
 }

@@ -10,7 +10,7 @@
 <body>
 <header>
 
-  <a href="navpage.php">Main menu</a>
+  <a href="navpage.php" class="headerLink">Main menu</a>
 
 </header>
 <table id="table" style="width:100%">
