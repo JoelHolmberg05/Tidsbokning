@@ -16,6 +16,10 @@
     color: #ffffff;
 }
 
+.inputTitle:hover {
+    cursor: text;
+}
+
 #date, #time, #massageType, #name, #phoneNmr {
     border-radius: 5px;
 }
