@@ -8,7 +8,11 @@
     <title>Schema</title>
 </head>
 <body>
+<header>
 
+  <a href="navpage.php">Main menu</a>
+
+</header>
 <table id="table" style="width:100%">
   <tr>
     <th>First Name</th>

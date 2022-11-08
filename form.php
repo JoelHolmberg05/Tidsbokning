@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-<a href="navpage.php">Main Page</a>
+<a href="navpage.php">Main Menu</a>
 </header>
 <div>
     <form method="post" action="index2.php">
@@ -34,7 +34,7 @@
         <input type="text" id="massageType" name="MassageType"><br><br>
 
 
-        <input type="submit" name="submitbtn" id="submitbtn" value="Submit">
+        <input type="submit" name="submitbtn" id="submitbtn" value="Submit" href="form.php">
     </form>
 
     <br><br><br><br><p id="leMongus">ඞ</p>
