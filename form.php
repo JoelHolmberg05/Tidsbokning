@@ -13,7 +13,7 @@
     <a class="link" href="index.php">Schema</a>
 </header>
 <div>
-    <form id="form" method="post" action="index2.php">
+    <form method="post" action="index.php">
 
         <label class="inputTitle" for="name">First Name</label><br>
         <input type="text" id="name" name="Name"><br><br>
@@ -24,17 +24,23 @@
         <label class="inputTitle" for="phoneNmr">Phonenumber</label><br>
         <input type="text" id="phoneNmr" name="PhoneNmr"><br><br>
 
-        <label class="inputTitle" for="time">Time</label><br>
-        <input type="text" id="time" name="Time"><br><br>
+        <label class="inputTitle" for="time">Time</label>
+        <input type="time" id="time" name="Time"><br><br>
     
-        <label class="inputTitle" for="date" id="dateLabel">Date</label><br>
-        <input type="text" id="date" name="Date"><br><br>
+        <label class="inputTitle" for="date" id="dateLabel">Date</label>
+        <input type="date" id="date" name="Date"><br><br>
 
-        <label class="inputTitle" for="massageType">Massage type</label><br>
-        <input type="text" id="massageType" name="MassageType"><br><br>
+        <label class="inputTitle" for="massageType">Massage type</label>
+        <select id="massageType" name="MassageType">
+            <option value="1">Hot stone</option>
+            <option value="2">Aromatherapy</option>
+            <option value="3">Deep tissue</option>
+            <option value="4">Sports massage</option>
+        </select>
 
+        <br><br>
 
-        <input type="submit" name="submitbtn" id="submitbtn" value="Submit" href="form.php">
+        <input type="submit" name="submitbtn" id="submitbtn" value="Submit">
     </form>
 
     <br><br><br><br><p id="leMongus">ඞ</p>
@@ -50,6 +56,42 @@
 <?php
     include 'includes/config.php';
 
+    $queryResult = $conn->query("SELECT * FROM customers");
+
+	//Loop som körs en gång för varje rad som hämtats från databasen.
+	foreach ($queryResult as $row){
+		{
+			//echo skriver ut på sidan. Här skrivs en paragraf ut per rad. Paragrafen innehåller den data som innehåller den info som ska hämtas ut ur databasen.
+			echo "<h1>";
+			echo $row['name'] . "<br>";
+			echo "</h1>";
+			echo "<p>".$row['lastname']."</p><br>";
+			echo "<p>";
+			echo $row['phone'] . "<br>";
+			echo "</p>";
+		}
+	}
+
+    if (isset($_POST["submitbtn"])){
+
+        $firstName = $_POST["name"];
+        $lastName = $_POST["lastName"];
+        $PhoneNmr = $_POST["phoneNmr"];
+        $time = $_POST["time"];
+        $date = $_POST["date"];
+        $massageType = $_POST["massageType"];
     
+    
+            if ($conn->query("INSERT INTO customers (firstname,lastname,phone) VALUES ('$firstName','$lastName','$phoneNmr')")){
+                echo "ez";
+                echo "<br> <a href='index.php'>Return to form.</a>";
+            }
+           
+            else {
+                echo ":(";
+                echo "<br> <a href='index.php'>Return to form.</a>";
+            }
+            
+        }
 
 ?>
