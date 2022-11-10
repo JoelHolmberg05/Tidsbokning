@@ -13,7 +13,7 @@
     <a class="link" href="index.php">Schema</a>
 </header>
 <div>
-    <form method="post" action="index.php">
+    <form method="post" action="formSuccess.php">
 
         <label class="inputTitle" for="name">First Name</label><br>
         <input type="text" id="name" name="Name"><br><br>
@@ -56,14 +56,14 @@
 <?php
     include 'includes/config.php';
 
-    $queryResult = $conn->query("SELECT * FROM customers");
+    /*$queryResult = $conn->query("SELECT * FROM customers");
 
 	//Loop som körs en gång för varje rad som hämtats från databasen.
 	foreach ($queryResult as $row){
 		{
 			//echo skriver ut på sidan. Här skrivs en paragraf ut per rad. Paragrafen innehåller den data som innehåller den info som ska hämtas ut ur databasen.
 			echo "<h1>";
-			echo $row['name'] . "<br>";
+			echo $row['firstname'] . "<br>";
 			echo "</h1>";
 			echo "<p>".$row['lastname']."</p><br>";
 			echo "<p>";
@@ -92,6 +92,6 @@
                 echo "<br> <a href='index.php'>Return to form.</a>";
             }
             
-        }
+        }*/
 
 ?>
