@@ -3,13 +3,13 @@
 
 
 #leMongus {
-    color: #000000;
+    color: #00000000;
     padding: 0;
     margin: 0;
 }
 
 #leMongus:hover {
-    color: #ff0000;
+    color: #000000;
 }
 
 * {
