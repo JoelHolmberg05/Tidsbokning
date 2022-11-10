@@ -11,7 +11,7 @@
 <header>
   <a class="link" href="form.php">Form</a>
 </header>
-<table id="table" style="width:100%">
+<!--<table id="table" style="width:100%">
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
@@ -33,14 +33,30 @@
     <td> </td>
     <td> </td>
   </tr>
-</table>
+</table>-->
+
+
 
 </body>
 </html>
 
 
 <?php
+    include 'includes/config.php';
 
-    
+    $queryResult = $conn->query("SELECT * FROM customers");
+
+    foreach ($queryResult as $row){
+      {
+          //echo skriver ut på sidan. Här skrivs en paragraf ut per rad. Paragrafen innehåller den data som innehåller den info som ska hämtas ut ur databasen.
+          echo "<h1>";
+          echo $row['firstname'] . "<br>";
+          echo "</h1>";
+          echo "<p>".$row['lastname']."</p><br>";
+          echo "<p>";
+          echo $row['phone'] . "<br>";
+          echo "</p>";
+      }
+  }
 
 ?>

@@ -16,22 +16,22 @@
     <form method="post" action="formSuccess.php">
 
         <label class="inputTitle" for="name">First Name</label><br>
-        <input type="text" id="name" name="Name"><br><br>
+        <input type="text" id="name" name="firstName"><br><br>
 
         <label class="inputTitle" for="lastName">Last Name</label><br>
-        <input type="text" id="lastName" name="Name"><br><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
 
         <label class="inputTitle" for="phoneNmr">Phonenumber</label><br>
-        <input type="text" id="phoneNmr" name="PhoneNmr"><br><br>
+        <input type="text" id="phoneNmr" name="phoneNmr"><br><br>
 
         <label class="inputTitle" for="time">Time</label>
-        <input type="time" id="time" name="Time"><br><br>
+        <input type="time" id="time" name="time"><br><br>
     
         <label class="inputTitle" for="date" id="dateLabel">Date</label>
-        <input type="date" id="date" name="Date"><br><br>
+        <input type="date" id="date" name="date"><br><br>
 
         <label class="inputTitle" for="massageType">Massage type</label>
-        <select id="massageType" name="MassageType">
+        <select id="massageType" name="massageType">
             <option value="1">Hot stone</option>
             <option value="2">Aromatherapy</option>
             <option value="3">Deep tissue</option>
