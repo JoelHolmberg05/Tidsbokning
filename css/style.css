@@ -40,17 +40,34 @@ header {
     font-size: 25px;
     border: #ffffff solid 3px;
     border-radius: 5px;
-    color: #ffffff;
+    color: #000000;
     background-color:#b1b1b1;
     text-decoration: none;
 }
 
 .link:hover {
+    color: #ffffff;
     background-color: #3d3d3d;
+    border: #000000 solid 3px;
     border-radius: 7px;
     box-shadow: 0px 0px 19px 25px #ffffffb9;
     -webkit-box-shadow: 0px 0px 19px 25px #ffffffb9;
     -moz-box-shadow: 0px 0px 19px 25px #ffffffb9;
+}
+
+.headerLink {
+    padding: 3px;
+    border: #000000 solid 3px;
+    border-radius: 5px;
+    color: #000000;
+    background-color:#b1b1b1;
+    text-decoration: none;
+}
+
+.headerLink:hover {
+    color: #ffffff;
+    background-color: #3d3d3d;
+    border-radius: 7px;
 }
 
 .inputTitle:hover {
@@ -58,8 +75,9 @@ header {
 }
 
 #date, #time, #massageType, #name, #lastName, #phoneNmr {
+    border: #000000 solid 3px;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 #submitbtn {

@@ -13,7 +13,7 @@
 <a href="navpage.php" class="headerLink">Main Menu</a>
 </header>
 <div>
-    <form method="post" action="index2.php">
+    <form id="form" method="post" action="index2.php">
 
         <label class="inputTitle" for="name">First Name</label><br>
         <input type="text" id="name" name="Name"><br><br>
