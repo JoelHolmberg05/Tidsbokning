@@ -9,9 +9,7 @@
 </head>
 <body>
 <header>
-
-  <a href="navpage.php" class="headerLink">Main menu</a>
-
+  <a class="link" href="form.php">Form</a>
 </header>
 <table id="table" style="width:100%">
   <tr>

@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-<a href="navpage.php" class="headerLink">Main Menu</a>
+    <a class="link" href="index.php">Schema</a>
 </header>
 <div>
     <form id="form" method="post" action="index2.php">
