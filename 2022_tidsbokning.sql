@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2022 at 08:35 AM
+-- Generation Time: Nov 10, 2022 at 08:43 AM
 -- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.13
+-- PHP Version: 8.1.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tidsbokning`
+-- Database: `2022_tidsbokning`
 --
 
 -- --------------------------------------------------------
@@ -48,6 +48,13 @@ CREATE TABLE `customers` (
   `phone` int(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`cus_id`, `firstname`, `lastname`, `phone`) VALUES
+(1, 'Gaming', 'Man', 2147483647);
+
 -- --------------------------------------------------------
 
 --
@@ -56,8 +63,18 @@ CREATE TABLE `customers` (
 
 CREATE TABLE `massage-type` (
   `mas_id` int(11) NOT NULL,
-  `massagetype` int(11) NOT NULL
+  `massagetype` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `massage-type`
+--
+
+INSERT INTO `massage-type` (`mas_id`, `massagetype`) VALUES
+(1, 'Hot stone'),
+(2, 'Aromatherapy'),
+(3, 'Deep tissue'),
+(4, 'Sport Massage');
 
 --
 -- Indexes for dumped tables
@@ -97,13 +114,13 @@ ALTER TABLE `bookning`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `cus_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `massage-type`
 --
 ALTER TABLE `massage-type`
-  MODIFY `mas_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `mas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
