@@ -39,7 +39,7 @@ header {
     padding: 5px;
     font-size: 25px;
     border: #000000 solid 3px;
-    border-radius: 5px;
+    border-radius: 7px;
     color: #000000;
     background-color:#b1b1b1;
     text-decoration: none;
@@ -47,8 +47,8 @@ header {
 
 .link:hover {
     color: #ffffff;
-    background-color: #3d3d3d;
-    border: #000000 solid 3px;
+    background-color: #000000;
+    border: #b4b4b4 solid 3px;
     border-radius: 7px;
 }
 

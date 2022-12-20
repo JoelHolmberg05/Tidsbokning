@@ -1,4 +1,6 @@
 <?php
+//file only exists to check if the form works, remove it when done.
+
     include 'includes/config.php';
 
     $queryResult = $conn->query("SELECT * FROM customers");
