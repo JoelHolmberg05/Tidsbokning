@@ -8,18 +8,18 @@
 
 
     if (isset($_POST["submitbtn"])){
-
         $firstName = $_POST["firstName"];
         $lastName = $_POST["lastName"];
         $phoneNmr = $_POST["phoneNmr"];
         $time = $_POST["time"];
         $date = $_POST["date"];
         $massageType = $_POST["massageType"];
-    
+
     
             if ($conn->query("INSERT INTO customers (firstname,lastname,phone) VALUES ('$firstName','$lastName','$phoneNmr')")){
                 echo "Great success!";
                 echo "<br> <a href='index.php'>Return to form.</a>";
+                echo $last_id;
             }
            
             else {
@@ -27,6 +27,11 @@
                 echo "<br> <a href='form.php'>Return to form.</a>";
             }
             
+            $last_id = $conn->insert_id;
+            if ($conn->query ("INSERT INTO bookning (bookedDate,Customers_id,massage_id) VALUES ('$date','$last_id','$massageType')")) {
+
+            }
+
         }
 
         foreach ($queryResult as $row){

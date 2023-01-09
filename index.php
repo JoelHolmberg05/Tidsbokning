@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <title>Schema</title>
+    <title>Tidsbokning</title>
 </head>
 <body>
 <header>
@@ -44,7 +44,7 @@
 <?php
     include 'includes/config.php';
 
-    $queryResult = $conn->query("SELECT * FROM customers");
+    $queryResult = $conn->query("SELECT * FROM customers INNER JOIN bookning ON customers.cus_id=bookning.customers_id");
 
     foreach ($queryResult as $row){
       {
