@@ -18,8 +18,10 @@
     
             if ($conn->query("INSERT INTO customers (firstname,lastname,phone) VALUES ('$firstName','$lastName','$phoneNmr')")){
                 echo "Great success!";
-                echo "<br> <a href='index.php'>Return to form.</a>";
+                echo "<br> <a href='form.php'>Return to form.</a>";
+                $last_id = $conn->lastInsertId();
                 echo $last_id;
+
             }
            
             else {
@@ -27,9 +29,8 @@
                 echo "<br> <a href='form.php'>Return to form.</a>";
             }
             
-            $last_id = $conn->insert_id;
-            if ($conn->query ("INSERT INTO bookning (bookedDate,Customers_id,massage_id) VALUES ('$date','$last_id','$massageType')")) {
-
+            if ($conn->query ("INSERT INTO bookning (bookedDate,bookedTime,Customers_id,massage_id) VALUES ('$date','$time','$last_id','$massageType')")) {
+ 
             }
 
         }

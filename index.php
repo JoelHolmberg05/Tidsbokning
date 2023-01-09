@@ -44,7 +44,7 @@
 <?php
     include 'includes/config.php';
 
-    $queryResult = $conn->query("SELECT * FROM customers INNER JOIN bookning ON customers.cus_id=bookning.customers_id");
+    $queryResult = $conn->query("SELECT * FROM bookning INNER JOIN customers ON customers.cus_id=bookning.customers_id INNER JOIN massage_type ON massage_type.mas_id=bookning.massage_id ORDER BY bookedDate DESC /*customers */");
 
     foreach ($queryResult as $row){
       {
@@ -56,6 +56,21 @@
           echo "<p>";
           echo $row['phone'] . "";
           echo "</p>";
+          echo $row['bookedDate'];
+          echo $row['bookedTime'];
+          echo $row['massage_id'];
+          if ($row['massage_id'] == 1){
+            echo "hotstone";
+          }
+          elseif ($row['massage_id'] == 2){
+            echo "Aromatherapy";
+          }
+          elseif ($row['massage_id'] == 3){
+            echo "Deep tissue";
+          }
+          else {
+            echo "Sport Massage";
+          }
       }
   }
 
