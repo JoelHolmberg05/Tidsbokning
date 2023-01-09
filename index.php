@@ -50,11 +50,11 @@
       {
           //echo skriver ut på sidan. Här skrivs en paragraf ut per rad. Paragrafen innehåller den data som innehåller den info som ska hämtas ut ur databasen.
           echo "<h1>";
-          echo $row['firstname'] . "<br>";
+          echo $row['firstname'] . "";
           echo "</h1>";
-          echo "<p>".$row['lastname']."</p><br>";
+          echo "<p>".$row['lastname'] . "";
           echo "<p>";
-          echo $row['phone'] . "<br>";
+          echo $row['phone'] . "";
           echo "</p>";
       }
   }
